@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<package>
+    <name>forkel_counter</name>
+    <version>1.1.0</version>
+    <stability>stable</stability>
+    <license uri="https://opensource.org/licenses/OSL-3.0">Open Software License v. 3.0 (OSL-3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>A customizable counter that allows you to count up or down from any number.</summary>
+    <description>&lt;p&gt;Add a customizable counter that allows you to count up or down from any number. With a specific option like &lt;i&gt;collection:catalog/product,from:-30 days,to:now&lt;/i&gt; you can get the size of a predefined collection. This module is using the class CountUp that works without a JavaScript framework.&lt;/p&gt;&#xD;
+&#xD;
+&lt;img src="http://www.tobiasforkel.de/public/magento/forkel_counter/version/1.1/screenshots/frontend/frontend_cms.gif" /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&#xD;
+&lt;p&gt;A JavaScript fallback will display a warning message in case of issues.&lt;/p&gt;&#xD;
+&#xD;
+&lt;img src="http://www.tobiasforkel.de/public/magento/forkel_counter/version/1.1/screenshots/frontend/frontend_fallback.jpg" /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&#xD;
+&lt;img src="http://www.tobiasforkel.de/public/magento/forkel_counter/version/1.1/screenshots/backend/backend_system.jpg" /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&#xD;
+&lt;h3&gt;Installation&lt;/h3&gt;&#xD;
+- 1. Pull the code.&lt;br /&gt;&#xD;
+- 2. Copy the code in your document root directory where the /app/ folder is located.&lt;br /&gt;&#xD;
+- 3. Clear all caches and reload your Admin Panel to run the installation process.&lt;br /&gt;&#xD;
+- 4. After installation you should see a new menu item &lt;i&gt;Forkel Counter&lt;/i&gt; inside of &lt;i&gt;System &amp;gt; Configuration &amp;gt; General&lt;/i&gt;.&lt;br /&gt;&lt;br /&gt;&#xD;
+&#xD;
+&lt;h3&gt;Features&lt;/h3&gt;&#xD;
+- Blocks are available for CMS pages and XML layout files.&lt;br /&gt;&#xD;
+- Disable or enable JavaScript and CSS in &lt;i&gt;System &amp;gt; Configuration &amp;gt; General &amp;gt; Forkel Counter&lt;/i&gt; to prevent conflicts with your theme.&lt;br /&gt;&#xD;
+- Display a Front Awesome icon.&lt;br /&gt;&#xD;
+- Display a custom prefix like $ or &#x20AC;.&lt;br /&gt;&#xD;
+- Display a custom suffix.&lt;br /&gt;&#xD;
+- Set a number ( -99 or 99 ) from where the counter should start.&lt;br /&gt;&#xD;
+- Set a number ( 290 or 10000 ) where the counter should stop.&lt;br /&gt;&#xD;
+- Set the amount of decimals.&lt;br /&gt;&#xD;
+- Set the counter duration in seconds.&lt;br /&gt;&#xD;
+- Override default options such as &lt;i&gt;{ &amp;quot;separator&amp;quot; : &amp;quot;,&amp;quot;, &amp;quot;decimal&amp;quot; : &amp;quot;.&amp;quot;, &amp;quot;useEasing&amp;quot; : true, &amp;quot;useGrouping&amp;quot; : true }&lt;/i&gt;&lt;br /&gt;&#xD;
+- Count rows from collections like sales/order or catalog/product in combination with a date filter.&lt;br /&gt;&lt;br /&gt;&#xD;
+&#xD;
+&lt;h3&gt;Usage and Examples&lt;/h3&gt;&#xD;
+&lt;p&gt;Please visit the Forkel Counter project on &lt;a href="https://github.com/tobias-forkel/Forkel_Counter#usage"&gt;GitHub&lt;/a&gt; for further details and examples.&lt;/p&gt;&#xD;
+&#xD;
+&lt;h3&gt;Online Guides&lt;/h3&gt;&#xD;
+&lt;p&gt;- In Progress&lt;/p&gt;&#xD;
+&#xD;
+&#xD;
+&lt;h3&gt;Warranty&lt;/h3&gt;&#xD;
+&lt;p&gt;This module is provided as-is, with no warranty.&lt;/p&gt;&#xD;
+&#xD;
+&lt;h3&gt;Updates&lt;/h3&gt;&#xD;
+&lt;p&gt;All &lt;strong&gt;micro&lt;/strong&gt;, &lt;strong&gt;major&lt;/strong&gt; and &lt;strong&gt;minor&lt;/strong&gt; updates are available for free on &lt;a href="https://github.com/tobias-forkel/Forkel_Counter"&gt;GitHub&lt;/a&gt; and Magento Connect.&#xD;
+&lt;/p&gt;&#xD;
+&#xD;
+&lt;h3&gt;Support&lt;/h3&gt;&#xD;
+&lt;p&gt;This module is provided as-is, with no support. If you have technical problems, please open a new issue on &lt;a href="https://github.com/tobias-forkel/Forkel_Counter/issues"&gt;GitHub&lt;/a&gt; or contact me on Magento Connect or &lt;a href="http://www.tobiasforkel.de"&gt;http://www.tobiasforkel.de&lt;/a&gt;.&lt;/p&gt;</description>
+    <notes>===== 1.1.0 =====&#xD;
+* Removed jQuery because I have replaced the counter plugin ( https://github.com/bfintal/Counter-Up ) with ( https://inorganik.github.io/countUp.js ) that allows you to count up and down without a JavaScript framework.&#xD;
+* Removed ( http://imakewebthings.com/waypoints ). Please add it to your theme manually.&#xD;
+* Added new parameter decimals and duration.&#xD;
+* Added default counter options in System &gt; Forkel Counter &gt; General&#xD;
+* Added new parameter options that allows you to set different ( https://inorganik.github.io/countUp.js ) settings for each counter.</notes>
+    <authors><author><name>Tobias Forkel</name><user>tforkel</user><email>magento@tobiasforkel.de</email></author></authors>
+    <date>2016-04-02</date>
+    <time>16:05:16</time>
+    <contents><target name="magecommunity"><dir name="Forkel"><dir name="Counter"><dir name="Block"><file name="Base.php" hash="0fb7db1a9d7a8cc6be259d1539950c0a"/><dir name="Frontend"><file name="Counter.php" hash="286507f4d5e6900c9b41e2e05b189b31"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="57e53875d049d0ea005ca12cf69eb0ac"/><file name="config.xml" hash="6415e6e34b01859c7da247b749c8de55"/><file name="system.xml" hash="45a6182a614112f9a1a4af2335e760e9"/></dir><dir name="Helper"><file name="Data.php" hash="469375d9492dcb6fce5d1160d4555ff6"/></dir><dir name="Model"><file name="Observer.php" hash="5796a0d31338261a8c705e35e2c23a92"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="forkel"><file name="counter.xml" hash="b24deaf69a80e9d151fc7dfb284500e1"/></dir></dir><dir name="template"><dir name="forkel"><dir name="counter"><file name="counter.phtml" hash="dd64c914216a511f9bc909743f7d31b2"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Forkel_Counter.xml" hash="36bc38d8ac906af039d0893a080e9dbc"/></dir></target><target name="mage"><dir name="js"><dir name="community"><dir name="forkel"><dir name="counter"><file name="init.min.js" hash="67cb56f84caff4e59c64ecfc27266346"/><file name="countUp.min.js" hash="d6c5a099ba0190b173d13b19a133a7f2"/></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><dir name="forkel"><dir name="counter"><file name="counter.min.css" hash="9754c3e411d6d5ebeca3115be10dd1c5"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.4.0</min><max>5.6.16</max></php></required></dependencies>
+</package>

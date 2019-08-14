@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Forkel Counter
+ *
+ * @category    Forkel
+ * @package     Forkel_Counter
+ * @copyright   Copyright (c) 2016 Tobias Forkel (http://www.tobiasforkel.de)
+ * @license     http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ */
+ -->
+
+<layout>
+
+    <forkel_counter_css>
+        <reference name="head">
+            <action method="addCss" ifconfig="forkel_counter/css/default">
+                <stylesheet>css/forkel/counter/counter.min.css</stylesheet>
+            </action>
+            <action method="addLinkRel" ifconfig="forkel_counter/css/font_awesome">
+                <rel>stylesheet</rel>
+                <href>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css</href>
+            </action>
+        </reference>
+    </forkel_counter_css>
+
+    <forkel_counter_js>
+        <reference name="head" ifconfig="forkel_counter/css/font_awesome">
+            <action method="addJs"><script>community/forkel/counter/countUp.min.js</script></action>
+        </reference>
+        <reference name="head" ifconfig="forkel_counter/css/font_awesome">
+            <action method="addJs"><script>community/forkel/counter/init.min.js</script></action>
+        </reference>
+    </forkel_counter_js>
+
+    <forkel_counter>
+<reference name="right">
+    <block type="forkel_counter/frontend_counter" name="forkel_counter_frontend_counter" after="catalog.compare.sidebar">
+        <action method="setData">
+            <name>className</name><value>forkel_class</value>
+        </action>
+        <action method="setData">
+            <name>icon</name><value>fa-umbrella</value>
+        </action>
+        <action method="setData">
+            <name>prefix</name><value>$</value>
+        </action>
+        <action method="setData">
+            <name>suffix</name><value>per month</value>
+        </action>
+        <action method="setData">
+            <name>from</name><value>0</value>
+        </action>
+        <action method="setData">
+            <name>to</name><value>1999</value>
+        </action>
+        <action method="setData">
+            <name>decimals</name><value>0</value>
+        </action>
+        <action method="setData">
+            <name>duration</name><value>5</value>
+        </action>
+        <action method="setData">
+            <name>options</name><value>{ "separator" : ",", "decimal" : ".", "useEasing" : true, "useGrouping" : true }</value>
+        </action>
+    </block>
+</reference>
+    </forkel_counter>
+
+</layout>
