@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/forkel_counter",
+    "name": "OpenMageModuleFostering\/forkel_counter",
     "type": "magento-module",
     "license": "Open-Software-License-v.-3.0-(OSL-3.0)",
     "homepage": "",
     "description": "A customizable counter that allows you to count up or down from any number.",
     "authors": [
-    {
-        "name": "Tobias Forkel",
-        "email": "magento@tobiasforkel.de"
-    }
-],
+        {
+            "name": "Tobias Forkel",
+            "email": "magento@tobiasforkel.de"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
